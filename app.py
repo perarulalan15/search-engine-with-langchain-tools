@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-## Page configuration
+# Page configuration
 st.title("🔎 LangChain - Chat with Search")
 
 
@@ -43,7 +43,6 @@ if "messages" not in st.session_state:
 for msg in st.session_state.messages:
     st.chat_message(msg["role"]).write(msg['content'])
 
-###
 # Chat input
 if prompt := st.chat_input(placeholder="What is machine learning?"):
     if not api_key:
