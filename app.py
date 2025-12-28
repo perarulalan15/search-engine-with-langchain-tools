@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# Page configuration
+## Page configuration
 st.title("🔎 LangChain - Chat with Search")
 
 
